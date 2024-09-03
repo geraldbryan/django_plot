@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot Display</title>
+    <style>
+        /* Basic styling for the navbar */
+        .navbar {
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+        .navbar a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Simple Navbar -->
+    <div class="navbar">
+        <a href="www.google.com">Home</a>
+        <a href="{% url 'page_two' %}">Plot Page</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <div>
+        <h1>TLKM.JK Daily Price Since 1 April 2024</h1>
+        <img src="{% url 'chart_one' %}" alt="Plot Image">
+    </div>
+
+</body>
+</html>
